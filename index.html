@@ -1,330 +1,977 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RideWave: Your trusted ride-sharing platform for seamless, safe, and eco-friendly travel. Book a ride today!">
-    <title>RideWave - Your Ride, On Demand</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-</head>
-<body>
-    <!-- Header -->
-    <div id="mainContent">
-        <header>
-            <img class="logo" src="assets/logo/RideWave logo_F.png" alt="RideWave Logo"
-            onclick="window.location.href='index.html'" style="cursor:pointer">
-            <div class="hamburger" aria-label="Toggle menu">☰</div>
-            <nav aria-label="Main navigation">
-                <a href="/index.html" class="active">Home</a>
-                <a href="/about.html">About Us</a>
-                <a href="/features.html">Features</a>
-                <a href="/safety.html">Safety</a>
-                <a href="/Estimatefare.html">Estimate Fare</a>
-                <a href="/contactus.html">Contact</a>
-            </nav>
-        </header>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - RideWave Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-        <!-- Hero Section -->
-        <section class="hero fade-in" id="home">
-            <h2>Your Ride, On Demand</h2>
-            <p>Get around town with ease. Book your ride anytime, anywhere with RideWave – safe, fast, and affordable.</p>
-        </section>
+  <meta name="robots" content="noindex, nofollow">
 
-        <!-- About Section -->
-        <section class="about">
-            <div class="container fade-in">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2 class="section-title">Who We Are</h2>
-                        <p>RideWave is transforming urban mobility by connecting riders and drivers through innovative technology. Our mission is to provide safe, reliable, and eco-friendly transportation solutions that empower communities.</p>
-                        <p>We are not just building a ride-hailing platform — we are building a community of riders, drivers, and partners who believe in safe, simple, and fair transportation.</p>
-                    </div>
-                    <div class="about-image fade-in">
-                        <img src="assets/logo/about.jpg" alt="RideWave team helping a customer">
-                    </div>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendors/aos/aos.css" rel="stylesheet">
+  <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename"><b style="color: #ff8a00;">R</b>ide<b style="color: #ff8a00;">W</b>ave</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="200">
+            <div class="hero-content text-center">
+              <div class="hero-badge" data-aos="fade-down" data-aos-delay="300">
+                <i class="bi bi-star-fill"></i>
+                <span>Riding the Wave of Innovation to Power Your Digital Future</span>
+              </div>
+              <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">Build. Grow. Support. — All with RideWave.</h1>
+              <p class="hero-description" data-aos="fade-up" data-aos-delay="500">At RideWave Technologies, we accelerate your business growth through smart technology, creative marketing, and reliable support — helping you stay ahead in the ever-evolving digital world.</p>
+
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                <a href="#contact" class="btn-primary">Get Started Today</a>
+                <!-- <a href="#portfolio" class="btn-outline">View Our Work</a> -->
+              </div>
+
+              <!-- <div class="hero-metrics" data-aos="fade-up" data-aos-delay="700">
+                <div class="metric-item">
+                  <div class="metric-icon">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <div class="metric-content">
+                    <span class="metric-number">85+</span>
+                    <span class="metric-label">Awards Won</span>
+                  </div>
                 </div>
+                <div class="metric-item">
+                  <div class="metric-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="metric-content">
+                    <span class="metric-number">500+</span>
+                    <span class="metric-label">Happy Clients</span>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-icon">
+                    <i class="bi bi-globe"></i>
+                  </div>
+                  <div class="metric-content">
+                    <span class="metric-number">25+</span>
+                    <span class="metric-label">Countries</span>
+                  </div>
+                </div>
+              </div> -->
             </div>
-        </section>
+          </div>
 
-        <!-- Features Section -->
-        <section class="features" id="features">
-            <div class="container fade-in">
-                <h2 class="section-title center">Why Choose RideWave ?</h2>
-                <div class="features-grid">
-                    <!-- Card 1 -->
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3>Instant Booking</h3>
-                        <p>Get matched with a driver in seconds with our advanced dispatch system. No more waiting - your ride arrives when you need it.</p>
-                    </div>
-                    
-                    <!-- Card 2 -->
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h3>Trusted Drivers</h3>
-                        <p>All drivers undergo rigorous background checks and training. Your safety is our top priority on every journey.</p>
-                    </div>
-                    
-                    <!-- Card 3 -->
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-tag"></i>
-                        </div>
-                        <h3>Clear Pricing</h3>
-                        <p>Know your fare upfront with no surprises. Our transparent pricing shows all costs before you confirm your ride.</p>
-                    </div>
-                    
-                    <!-- Card 4 -->
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h3>Eco-Friendly Options</h3>
-                        <p>Choose hybrid or electric vehicles to reduce your carbon footprint. We're committed to sustainable transportation.</p>
-                    </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="image-section">
+              <div class="primary-image">
+                <img src="assets/img/about/about-14.webp" alt="Corporate office environment" class="img-fluid">
+                <div class="experience-badge">
+                  <div class="badge-content">
+                    <span class="years">1+</span>
+                    <span class="text">Years of Excellence</span>
+                  </div>
                 </div>
+              </div>
+              <div class="image-grid">
+                <img src="assets/img/about/about-3.webp" alt="Professional workspace" class="img-fluid grid-img">
+                <img src="assets/img/about/about-7.webp" alt="Team collaboration" class="img-fluid grid-img">
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Safety Section -->
-        <section class="safety" id="safety">
-            <div class="container fade-in">
-                <h2 class="section-title center">Your Safety - Our Priority</h2>
-                <div class="safety-grid">
-                    <!-- Card 1 -->
-                    <div class="safety-card">
-                        <div class="safety-icon">
-                            <i class="fas fa-id-card"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Driver Verification</h3>
-                        <p>Every driver passes comprehensive background checks, license verification, and in-person screenings before joining our platform.</p>
-                        <div class="safety-line"></div>
-                    </div>
-                    
-                    <!-- Card 2 -->
-                    <div class="safety-card">
-                        <div class="safety-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Real-Time Tracking</h3>
-                        <p>Share your trip details with loved ones and track your ride in real-time through our app for complete peace of mind.</p>
-                        <div class="safety-line"></div>
-                    </div>
-                    
-                    <!-- Card 3 -->
-                    <div class="safety-card">
-                        <div class="safety-icon">
-                            <i class="fas fa-headset"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>24/7 Support</h3>
-                        <p>Our dedicated safety team is available around the clock to assist you with any concerns during your journey.</p>
-                        <div class="safety-line"></div>
-                    </div>
-                    
-                    <!-- Card 4 -->
-                    <div class="safety-card">
-                        <div class="safety-icon">
-                            <i class="fas fa-shield-alt"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Quick Assistance</h3>
-                        <p>Instant access to emergency services through in-app button with automatic location sharing to authorities.</p>
-                        <div class="safety-line"></div>
-                    </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="content-section">
+              <div class="section-intro">
+                <div class="company-badge">WHO WE ARE</div>
+                <h2>We’re the Technology Partner You’ve Been Searching For</h2>
+                <p class="intro-text">At RideWave Technologies Private Limited, we’re passionate innovators dedicated to helping businesses ride the wave of digital transformation. As a full-service IT solutions company, we specialize in software development, digital marketing, and technical support — empowering our clients to achieve sustainable growth and measurable success. Our talented team of developers, designers, and strategists turns bold ideas into powerful digital experiences. Whether you’re a startup or an enterprise, we provide the technology, creativity, and support to help you scale faster and smarter.</p>
+              </div>
+
+              <div class="achievement-list">
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="bi bi-lightbulb-fill"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Our Mission</h4>
+                    <p>To empower businesses through intelligent technology and strategic innovation, enabling them to grow, evolve, and stay ahead in an ever-changing digital landscape.</p>
+                  </div>
                 </div>
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Our Vision</h4>
+                    <p>To be a globally recognized technology partner that drives transformation, inspires innovation, and delivers excellence across every project we undertake.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="action-section">
+                <a href="#" class="btn btn-primary">Learn More About Us</a>
+                <div class="contact-info">
+                  <span class="contact-label">Call us directly:</span>
+                  <strong class="phone-number">+1 (555) 234-5678</strong>
+                </div>
+              </div> -->
             </div>
-        </section>
+          </div>
 
-        <!-- Fare Estimator Section -->
-        <section class="fare-estimator" id="estimator">
-            <div class="container fade-in">
-                <h2 class="section-title center">Estimate Fare</h2>
-                <div class="estimator-box">
-                    <div class="input-group">
-                        <div class="input-field">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <input type="text" id="pickup" placeholder="Enter pickup location" aria-label="Pickup location">
-                        </div>
-                        <div class="input-field">
-                            <i class="fas fa-flag-checkered"></i>
-                            <input type="text" id="dropoff" placeholder="Enter dropoff location" aria-label="Dropoff location">
-                        </div>
-                    </div>
-                    <button id="estimate-btn" class="btn btn-primary">Get Estimate</button>
-                    <div id="fare-result" class="fare-result">
-                        <!-- Fare will be displayed here -->
-                    </div>
-                </div>
+        </div>
+
+        <div class="metrics-section" data-aos="fade-up" data-aos-delay="400">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="metric-card">
+                <div class="metric-value">10+</div>
+                <div class="metric-label">Successful Projects</div>
+              </div>
             </div>
-        </section>
-
-        <!-- Contact Us Section -->
-        <section class="contact" id="contact">
-            <div class="container fade-in">
-                <h2 class="section-title center">Contact Us</h2>
-                <div class="contact-container">
-                    <!-- Left Side - Contact Info -->
-                    <div class="contact-info centered">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Our Headquarters</h3>
-                                <p>Hyderabad, Telangana, India.</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Call Us</h3>
-                                <p>+91 97046 74140<br>+91 80960 07674<br>
-                                    <!-- Mon-Fri: 9:30AM - 6:30PM IST -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email Us</h3>
-                                <p>ridewave042025@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Right Side - Contact Form -->
-                    <div class="contact-form-container centered">
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="subject" id="subject" placeholder="Subject">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="metric-card">
+                <div class="metric-value">99.8%</div>
+                <div class="metric-label">Customer Satisfaction</div>
+              </div>
             </div>
-        </section>
-
-        <!-- Join RideWave Section -->
-        <section class="join-ridewave">
-            <div class="container fade-in">
-                <h2 class="section-title center">Join RideWave Today</h2>
-                
-                <div class="toggle-buttons">
-                    <button class="toggle-btn active" id="ride-btn">Ride with Us</button>
-                    <button class="toggle-btn" id="drive-btn">Drive with Us</button>
-                </div>
-                
-                <div class="content-card" id="ride-content">
-                    <h3>Ride with RideWave</h3>
-                    <p>Enjoy hassle-free rides with real-time tracking, multiple ride options, and 24/7 support. Download the app and start riding today!</p>
-                    <a href="/" class="btn btn-primary">Get Started</a>
-                </div>
-                
-                <div class="content-card" id="drive-content" style="display: none;">
-                    <h3>Drive with RideWave</h3>
-                    <p>Earn on your schedule with flexible hours and competitive payouts. Join our driver community and make a difference.</p>
-                    <a href="/" class="btn btn-primary">Get Started</a>
-                </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="metric-card">
+                <div class="metric-value">40+</div>
+                <div class="metric-label">Team Members</div>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-6">
+              <div class="metric-card">
+                <div class="metric-value">24/7</div>
+                <div class="metric-label">Customer Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!-- App Download Section -->
-        <section class="app-download">
-            <div class="container fade-in">
-                <h2 class="section-title center">Get the RideWave App</h2>
-                <p class="app-subtitle center">Download our app for a seamless ride experience on iOS and Android. Book, track, and pay with ease!</p>
-                
-                <div class="download-buttons">
-                    <a href="#" aria-label="Download on the App Store" class="app-store-btn">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>At RideWave Technologies, we bring together innovation, intelligence, and reliability to help your business grow faster and operate smarter. Our solutions are built to enhance performance, optimize processes, and deliver real results — every time.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+            <div class="features-content">
+              <h2>Seamless and Efficient Solutions</h2>
+              <p class="lead">We simplify complex challenges with smart, effective, and flexible solutions. Our approach gives you the freedom to choose the right technology for your business without limitations or obstacles.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="features-image">
+              <img src="assets/img/features/features-4.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Seamless Integration</h4>
+              <p>Experience smooth and efficient implementation of technology across all your business operations. We ensure your systems work together perfectly, reducing complexity and improving productivity.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Fast and Reliable</h4>
+              <p>Our platforms are designed for speed, stability, and security — giving your business uninterrupted performance and a seamless user experience, even under heavy demand.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="bi bi-gem"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Effortless Scalability</h4>
+              <p>Grow without limits. Our solutions are flexible and scalable, allowing your technology to evolve as your business expands.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Features 2 Section -->
+    <section id="features-2" class="features-2 section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="features-list row gy-4">
+          <div class="col-md-6">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div class="feature-content">
+                <h4>AI-Powered Automation</h4>
+                <p>Boost efficiency with intelligent automation that saves time, reduces manual work, and improves accuracy. From process automation to smart analytics, AI helps you work smarter, not harder.</p>
+                <div class="feature-tags">
+                  <span>Smart</span>
+                  <span>Automated</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Cloud Integration</h4>
+                <p>We help you harness the power of the cloud for better collaboration, faster performance, and enhanced security — all while reducing infrastructure costs.</p>
+                <div class="feature-tags">
+                  <span>Scalable</span>
+                  <span>Reliable</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Team Collaboration</h4>
+                <p>Empower your teams with tools that improve communication, transparency, and efficiency. Collaborate in real time and achieve more, together.</p>
+                <div class="feature-tags">
+                  <span>Collaborative</span>
+                  <span>Efficient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Advanced Analytics</h4>
+                <p>Turn data into decisions. Our analytics solutions provide powerful insights into performance, customer behavior, and trends — helping you make informed, strategic moves.</p>
+                <div class="feature-tags">
+                  <span>Insights</span>
+                  <span>Data-driven</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="cta-section" data-aos="fade-up" data-aos-delay="500">
+          <a href="#" class="btn-primary">Get Started Today</a>
+          <a href="#" class="btn-secondary">View Demo</a>
+        </div> -->
+      </div>
+
+    </section><!-- /Features 2 Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>We create technology that solves real business challenges with creativity and precision. Every solution we deliver is built with passion, innovation, and a deep understanding of your goals — helping your business stay ahead in a fast-changing digital world</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="services-grid">
+          <div class="row g-4">
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="featured-service-card">
+                <div class="service-badge">Most Popular</div>
+                <div class="service-icon-large">
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <h3>Automated Workflows</h3>
+                <p>Streamline your business processes with intelligent automation that saves time and reduces human error. Perfect for scaling teams.</p>
+                <div class="feature-highlights">
+                  <div class="highlight-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>24/7 Processing</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Smart Analytics</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Easy Integration</span>
+                  </div>
+                </div>
+                <a href="#contact" class="btn-primary">Get Started Free</a>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row g-4">
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Security Solutions</h4>
+                    <p>Enterprise-grade security measures to protect your data and maintain compliance standards.</p>
+                    <!-- <a href="service-details.html" class="service-link">
+                      <span>Learn More</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>Performance Analytics</h4>
+                    <p>Real-time insights and comprehensive reporting to optimize your business performance.</p>
+                    <!-- <a href="service-details.html" class="service-link">
+                      <span>Learn More</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Team Collaboration</h4>
+                    <p>Seamless collaboration tools that bring your team together regardless of location.</p>
+                    <!-- <a href="service-details.html" class="service-link">
+                      <span>Learn More</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-cloud-arrow-up"></i>
+                    </div>
+                    <h4>Cloud Integration</h4>
+                    <p>Flexible cloud solutions that scale with your business needs and requirements.</p>
+                    <!-- <a href="service-details.html" class="service-link">
+                      <span>Learn More</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="services-tabs mt-5">
+          <ul class="nav nav-pills justify-content-center mb-5" id="services-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="services-development-tab" data-bs-toggle="pill" data-bs-target="#services-development" type="button" role="tab">Development</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="services-marketing-tab" data-bs-toggle="pill" data-bs-target="#services-marketing" type="button" role="tab">Marketing</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="services-support-tab" data-bs-toggle="pill" data-bs-target="#services-support" type="button" role="tab">Support</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="services-tabs-content">
+
+            <div class="tab-pane fade show active" id="services-development" role="tabpanel">
+              <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                    <h5>Web Development</h5>
+                    <p>Modern, responsive websites built with cutting-edge technologies for optimal performance.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-phone"></i>
+                    </div>
+                    <h5>Mobile Apps</h5>
+                    <p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-server"></i>
+                    </div>
+                    <h5>API Development</h5>
+                    <p>Robust and scalable APIs that power your applications and enable seamless integrations.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="services-marketing" role="tabpanel">
+              <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-megaphone"></i>
+                    </div>
+                    <h5>Digital Campaigns</h5>
+                    <p>Strategic digital marketing campaigns that reach your target audience effectively.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-search"></i>
+                    </div>
+                    <h5>SEO Optimization</h5>
+                    <p>Comprehensive SEO strategies to improve your search engine rankings and visibility.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-share"></i>
+                    </div>
+                    <h5>Social Media</h5>
+                    <p>Engaging social media strategies that build brand awareness and drive customer engagement.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="services-support" role="tabpanel">
+              <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-headset"></i>
+                    </div>
+                    <h5>24/7 Support</h5>
+                    <p>Round-the-clock technical support to ensure your systems run smoothly at all times.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-tools"></i>
+                    </div>
+                    <h5>System Maintenance</h5>
+                    <p>Regular maintenance and updates to keep your systems secure and performing optimally.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="tab-service-card">
+                    <div class="service-icon">
+                      <i class="bi bi-person-check"></i>
+                    </div>
+                    <h5>Training</h5>
+                    <p>Comprehensive training programs to help your team master our tools and platforms.</p>
+                    <!-- <a href="service-details.html" class="tab-service-link">View Details</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>FAQ's</h2>
+        <p>Clear, concise, and designed to reassure clients that RideWave Technologies is transparent, approachable, and ready to help.</p>
+      </div><!-- End Section Title -->
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">What services does RideWave Technologies offer?</h3>
+                    <div class="answer">
+                      <p>RideWave Technologies is a full-service IT solutions company specializing in software development, digital marketing, and technical support. From creating dynamic websites and mobile apps to driving online growth through data-driven marketing, we provide end-to-end digital solutions for businesses of all sizes.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">What industries do you work with?</h3>
+                    <div class="answer">
+                      <p>We work across a wide range of industries, including technology, e-commerce, healthcare, education, real estate, finance, and manufacturing. Our flexible approach allows us to tailor our services to fit your specific business needs and industry goals.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">How does RideWave approach a new project?</h3>
+                    <div class="answer">
+                      <p>Every project begins with understanding your goals. We start with a discovery and strategy session, followed by planning, design, development, and testing. Once launched, we continue with maintenance and support to ensure your project’s long-term success.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">Can you handle both small and large projects?</h3>
+                    <div class="answer">
+                      <p>Absolutely. Whether you’re a startup building your first product or a large enterprise scaling your systems, we have the expertise and resources to deliver tailored solutions that meet your specific needs and budget.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">How long does it take to complete a project?</h3>
+                    <div class="answer">
+                      <p>Project timelines depend on scope and complexity. A basic website might take 3–4 weeks, while a full-scale web application could take 2–3 months. We provide clear timelines and milestones before starting any project to keep you informed at every step.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">How does RideWave ensure quality and security?</h3>
+                    <div class="answer">
+                      <p>We follow industry best practices, perform rigorous testing, and implement data security measures at every stage of development. Our goal is to deliver reliable, secure, and high-performing solutions every time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End FAQ Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>We’re here to help your business grow. Reach out to us for any questions, project inquiries, or support — and our team at RideWave Technologies will get back to you promptly.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="contact-info-panel">
+              <div class="panel-content">
+                <div class="info-header">
+                  <h2>Ready to Connect?</h2>
+                  <p>Let’s turn your ideas into reality. Contact RideWave Technologies today and discover how our full-service solutions in software development, digital marketing, and support can help your business grow and thrive.</p>
+                </div>
+
+                <div class="info-grid">
+                  <div class="info-card" data-aos="slide-up" data-aos-delay="250">
+                    <div class="card-icon">
+                      <i class="bi bi-house-door"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Visit Our Office</h4>
+                      <p>Hyderabad</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card" data-aos="slide-up" data-aos-delay="300">
+                    <div class="card-icon">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Send Us a Message</h4>
+                      <p>it-support@ridewave.in</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card" data-aos="slide-up" data-aos-delay="350">
+                    <div class="card-icon">
+                      <i class="bi bi-headset"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Call Us Directly</h4>
+                      <p>+91 97046 74140 <br> +91 80193 87674</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card" data-aos="slide-up" data-aos-delay="400">
+                    <div class="card-icon">
+                      <i class="bi bi-calendar3"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Business Hours</h4>
+                      <p>Mon-Fri: 9AM-6PM<br></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-section" data-aos="fade-in" data-aos-delay="450">
+                  <h5>Follow Our Journey</h5>
+                  <div class="social-icons">
+                    <a href="#" class="social-icon">
+                      <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="#" aria-label="Get it on Google Play" class="play-store-btn">
-                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play">
+                    <a href="#" class="social-icon">
+                      <i class="bi bi-twitter-x"></i>
                     </a>
+                    <a href="#" class="social-icon">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-col">
-                        <img src="assets/logo/RideWave logo_white_F.png" alt="RideWave Logo" class="footer-logo">
-                        <!-- <p>RideWave is transforming urban mobility with safe, reliable, and eco-friendly transportation solutions.</p> -->
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-col">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Estimate Fare</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-col">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Safety</a></li>
-                            <li><a href="#">Community Guidelines</a></li>
-                            <li><a href="#">Accessibility</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-col">
-                        <h3>Legal</h3>
-                        <ul>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Cookie Policy</a></li>
-                            <li><a href="#">Licenses</a></li>
-                        </ul>
-                    </div>
+          <div class="col-lg-6" data-aos="slide-left" data-aos-delay="300">
+            <div class="contact-form-wrapper">
+              <div class="form-header">
+                <h3>Drop Us a Message</h3>
+                <div class="header-line"></div>
+              </div>
+
+              <form action="forms/contact.php" method="post" class="php-email-form modern-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name" required="">
                 </div>
-                
-                <div class="footer-bottom">
-                    <p>&copy; 2025 | <a href="/index.html" style="color: #bbbbbb; text-decoration: none; font-weight: 600;">RideWave Technologies PVT LTD.</a> | All rights reserved.</p>
-                    <div class="footer-apps">
-                        <a href="#" aria-label="Download on the App Store">
-                            <i class="fab fa-apple"></i> App Store
-                        </a>
-                        <a href="#" aria-label="Get it on Google Play">
-                            <i class="fab fa-google-play"></i> Google Play
-                        </a>
-                    </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Email Address" required="">
                 </div>
+
+                <div class="form-group">
+                  <input type="tel" class="form-control" name="phone" id="phoneNumber" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="emailSubject" placeholder="Subject" required="">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="messageContent" rows="6" placeholder="Your message goes here..." required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <span class="btn-text"><a href="mailto:it-support@ridewave.in" style="color: white;">Send Message</a></span>
+                  <span class="btn-icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </form>
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+
+      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-start">
+
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="index.html" class="logo d-flex align-items-center mb-4">
+                <span class="sitename"><b style="color: #ff8a00;">R</b>ide<b style="color: #ff8a00;">W</b>ave</span>
+              </a>
+              <p class="brand-description">Let’s build something amazing together. Reach out to RideWave Technologies and start your digital journey today!</p>
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Hyderabad</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+91 97046 74140 <br> +91 80193 87674</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ef878a838380af8b8a9c8688819c9b9a8b8680c18c8082">it-support@ridewave.in</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+
+                <div class="col-6 col-lg-4">
+                  <div class="nav-column">
+                    <h6>Company</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Home</a>
+                      <a href="#about">About Us</a>
+                      <a href="#about">Our Mission & Vision</a>
+                      <a href="#features">Features</a>
+                      <a href="#contact">Contact</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-4">
+                  <div class="nav-column">
+                    <h6>Services</h6>
+                    <nav class="footer-nav">
+                      <a href="#services">Software Development</a>
+                      <a href="#services">Web & Mobile Apps</a>
+                      <a href="#services">Digital Marketing</a>
+                      <a href="#services">IT & Technical Support</a>
+                      <a href="#services">AI & Cloud Solutions</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-4">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="#faq">FAQ's</a>
+                      <a href="#">Privacy Policy</a>
+                      <a href="#">Terms & Conditions</a>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
-    <script type="text/javascript" src="main.js"></script>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>© <span class="sitename"><b>2025 | RideWave Technologies Private Limited. |</b></span> All rights reserved.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendors/php-email-form/validate.js"></script>
+  <script src="vendors/aos/aos.js"></script>
+  <script src="vendors/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
+
 </html>
