@@ -1589,10 +1589,10 @@ section,
 }
 
 .services .services-tabs .nav-pills {
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  /* background: color-mix(in srgb, var(--accent-color), transparent 95%); */
   border-radius: 50px;
   padding: 8px;
-  display: inline-flex;
+  /* display: inline-flex; */
   margin: 0 auto;
 }
 
