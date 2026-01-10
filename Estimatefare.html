@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RideWave: Your trusted ride-sharing platform for seamless, safe, and eco-friendly travel. Book a ride today!">
+    <title>Estimate Fare RideWave - Estimate Your Ride Fare</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="non-index">
+    <!-- Header -->
+    <header>
+        <img class="logo" src="assets/logo/RideWave logo_F.png" alt="RideWave Logo" 
+         onclick="window.location.href='index.html'" style="cursor:pointer">
+        <div class="hamburger" aria-label="Toggle menu">☰</div>
+        <nav aria-label="Main navigation">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About Us</a>
+            <a href="/features.html">Features</a>
+            <a href="/safety.html">Safety</a>
+            <a href="/Estimatefare.html" class="active">Estimate Fare</a>
+            <a href="/contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero secondary-hero fade-in" style="background-image: url(assets/logo/Estimate.jpg);">
+        <div class="hero-content">
+            <h1>Estimate Your Ride Fare</h1>
+            <p class="hero-subtitle">Get an instant fare estimate before you book your ride</p>
+        </div>
+    </section>
+
+    <!-- Fare Estimator Section -->
+    <section class="fare-estimator" style="background-color: #F7FAFC;">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2 class="section-title">Estimate Fare</h2>
+                <p class="section-subtitle">Enter pickup and drop locations to view your ride cost</p>
+            </div>
+            <div class="estimator-box">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="pickup" placeholder="Enter pickup location" aria-label="Pickup location">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-flag-checkered"></i>
+                        <input type="text" id="dropoff" placeholder="Enter dropoff location" aria-label="Dropoff location">
+                    </div>
+                </div>
+                <button id="estimate-btn" class="btn btn-primary">Get Estimate</button>
+                <div id="fare-result" class="fare-result">
+                    <!-- Fare will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/logo/RideWave logo_white_F.png" alt="RideWave Logo" class="footer-logo">
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Estimate Fare</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Licenses</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 | <a href="/index.html" style="color: #bbbbbb; text-decoration: none; font-weight: 600;">RideWave Technologies PVT LTD.</a> | All rights reserved.</p>
+                <div class="footer-apps">
+                    <a href="#" aria-label="Download on the App Store">
+                        <i class="fab fa-apple"></i> App Store
+                    </a>
+                    <a href="#" aria-label="Get it on Google Play">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
